@@ -271,7 +271,7 @@ section.active {
 }
 
 @keyframes rotate-border {
-    100% {
+    0% {
         transform: rotate(360deg);
     }
 }
