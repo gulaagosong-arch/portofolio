@@ -97,27 +97,29 @@ const activePortofolio = () => {
 }
 
 arrowRight.addEventListener('click', () => {
-    if (index < 4) {
+    if (index < 5) {
         index++;
-        arrowLeft.classList.remove('disabled');
     }
-    else {
-        index = 5;
+
+    if (index === 5) {
         arrowRight.classList.add('disabled');
     }
+
+    arrowLeft.classList.remove('disabled');
 
     activePortofolio();
 });
 
 arrowLeft.addEventListener('click', () => {
-    if (index > 1) {
+    if (index > 0) {
         index--;
-        arrowRight.classList.remove('disabled');
     }
-    else {
-        index = 0;
+
+    if (index === 0) {
         arrowLeft.classList.add('disabled');
     }
+
+    arrowRight.classList.remove('disabled');
 
     activePortofolio();
 });
