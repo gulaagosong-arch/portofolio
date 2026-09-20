@@ -532,11 +532,47 @@
                         <input type="text" name="subjek" placeholder="Email Subject" required>
                         <textarea name="pesan" id="" placeholder="Your Message" required></textarea>
                     </div>
-                    <button type="submit" class="btn">Send Message</button>
+                    <div class="contact-buttons">
+                        <button type="submit" class="btn">Send Message</button>
+
+                        <button type="button" class="admin-btn" id="admin-btn" title="Admin">
+                            <i class='bx bx-lock-alt'></i>
+                        </button>
+                    </div>
                 </form>
             </div>
         </div>
     </section>
+
+    <div class="admin-modal" id="admin-modal">
+        <div class="admin-modal-box">
+
+            <button class="close-modal" id="close-modal">
+                <i class='bx bx-x'></i>
+            </button>
+
+            <i class='bx bx-lock-alt admin-icon'></i>
+
+            <h2>Admin Access</h2>
+
+            <p>Masukkan password untuk melihat pesan masuk.</p>
+
+            <form action="login.php" method="POST">
+                <input type="password" name="password" placeholder="Password" required>
+
+                <div class="modal-buttons">
+                    <button type="button" class="btn" id="cancel-btn">
+                        Batal
+                    </button>
+
+                    <button type="submit" class="btn">
+                        Masuk
+                    </button>
+                </div>
+            </form>
+
+        </div>
+    </div>
 
     <script src="script.js"></script>
 </body>

@@ -123,3 +123,20 @@ arrowLeft.addEventListener('click', () => {
 
     activePortofolio();
 });
+
+const adminBtn = document.querySelector('#admin-btn');
+const adminModal = document.querySelector('#admin-modal');
+const closeModal = document.querySelector('#close-modal');
+const cancelBtn = document.querySelector('#cancel-btn');
+
+adminBtn.addEventListener('click', () => {
+    adminModal.classList.add('active');
+});
+
+closeModal.addEventListener('click', () => {
+    adminModal.classList.remove('active');
+});
+
+cancelBtn.addEventListener('click', () => {
+    adminModal.classList.remove('active');
+});
