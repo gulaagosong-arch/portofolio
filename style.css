@@ -908,6 +908,18 @@ section.active {
     .contact-box .field-box {
         grid-template-columns: repeat(2, 1fr);
     }
+
+    .admin-section {
+        padding: 12rem 4% 5rem;
+    }
+    
+    .admin-container .heading {
+        font-size: 3.5rem;
+    }
+    
+    .admin-table {
+        padding: 1rem;
+    }
 }
 
 @media screen and (max-width: 600px) {
@@ -1050,4 +1062,130 @@ section.active {
 
 .close-modal:hover {
     color: var(--main-color);
+}
+
+/* ==================== */
+/* ADMIN PAGE */
+/* ==================== */
+
+.admin-header {
+    visibility: visible;
+    opacity: 1;
+}
+
+.admin-header .btn {
+    text-decoration: none;
+}
+
+.admin-section {
+    display: block;
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    height: auto;
+    padding: 12rem 9% 5rem;
+    background: var(--bg-color);
+    visibility: visible;
+    opacity: 1;
+    overflow: visible;
+}
+
+.admin-container {
+    display: block;
+    width: 100%;
+    visibility: visible;
+    opacity: 1;
+}
+
+.admin-container .heading {
+    display: block;
+    font-size: 4rem;
+    text-align: center;
+    margin-bottom: 4rem;
+    visibility: visible;
+    opacity: 1;
+}
+
+.admin-table {
+    width: 100%;
+    overflow-x: auto;
+    background: var(--second-bg-color);
+    padding: 2rem;
+    border-radius: 1rem;
+}
+
+.admin-table table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 900px;
+}
+
+.admin-table th,
+.admin-table td {
+    padding: 1.5rem;
+    text-align: left;
+    border-bottom: .1rem solid rgba(255, 255, 255, .1);
+    font-size: 1.5rem;
+}
+
+.admin-table th {
+    color: var(--main-color);
+    font-size: 1.6rem;
+}
+
+.admin-table td {
+    color: var(--white-color);
+}
+
+.admin-table tr:hover {
+    background: var(--bg-color);
+}
+
+/* SUCCESS POPUP */
+
+.success-popup {
+    position: fixed;
+    inset: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: rgba(0, 0, 0, .7);
+
+    z-index: 1000;
+}
+
+.success-popup-box {
+    width: 40rem;
+    padding: 4rem 3rem;
+
+    background: var(--second-bg-color);
+
+    border: .2rem solid var(--main-color);
+    border-radius: 1rem;
+
+    text-align: center;
+
+    box-shadow: 0 0 2rem var(--main-color);
+}
+
+.success-icon {
+    font-size: 7rem;
+    color: var(--main-color);
+    margin-bottom: 1rem;
+}
+
+.success-popup-box h2 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.success-popup-box p {
+    font-size: 1.6rem;
+    margin-bottom: 2.5rem;
+}
+
+.success-popup-box .btn {
+    text-decoration: none;
 }
